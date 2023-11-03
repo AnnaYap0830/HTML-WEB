@@ -1,0 +1,516 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: myfont;
+	src: url("North Avellion.otf")
+}
+
+*{
+	box-sizing: border-box;
+	font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+}
+
+body
+{
+	padding: 0; 
+	margin: 0; 
+}
+
+.nav {
+	margin: -8px;
+	padding: 25px;
+	overflow: hidden;
+	background-color: #C39E9E;
+	position: fixed;
+	top: 0;
+	height: 101px;
+	width: 1920px;
+	z-index: 2; /*will place infront of everything*/
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-button1 {
+	display: inline-block;
+	padding: 0px 0px 10px 10px;
+	margin-bottom: 40px;
+	margin-right: 200px;
+	margin-left: 30px;
+}
+
+.nav-button1 a:hover {
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+.nav-button2 {
+	width: 800px;
+	position: relative;
+	top: -5px;
+	right: -100px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 10px;
+}
+
+.nav-button2 a {
+	color: #2d2d2b;
+	text-align: center;
+	list-style-type: none;
+	margin: 15px; /*gap between a link button*/
+	text-decoration: none;
+	border: 1px solid #F6F0F1;
+	padding: 5px 15px; /*space in button*/
+}
+
+.nav-button2 a:hover {
+	background-color: #F6F0F1; /*button color*/
+	padding: 10px 10px;
+	color: #2D2D2B; /*font color*/
+	transition: 0.3s;
+}
+
+.slideshow-container 
+{
+    max-width: 19200px;
+    max-height: 800px;
+	top:-10px;
+	margin:-8px;
+    position: absolute;
+}
+
+.mySlides 
+{
+	display: none;
+	text-align: center;
+}
+
+img
+{
+	vertical-align: middle;
+}
+
+.dc
+{
+	margin-top:-50px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer; /*cursor style*/
+  height: 15px;
+  width: 15px;
+  margin-top:10px;
+  margin-right: 2px;
+  background-color: #C39E9E;
+  border-radius: 50%;
+  display: inline-block;  
+  z-index:1; /*new line*/
+}
+
+.active, .dot:hover {
+  background-color: white;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.0s;
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+
+/*Life is but a dream*/
+.slider-text {
+	color: #f2f2f2;
+	font-size: 100px;
+	max-width: 1920px;
+	text-align: center;
+	font-family: myfont;
+	position: relative;
+	top: 370px;
+	margin: 0 auto;
+	z-index:1;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+#profile
+{
+	position: relative;
+	top: 799px;
+	margin-right:-15px;
+	margin-left:-15px;
+	max-width:19200px;
+	max-height:500px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	background-color: #F6F5F0;
+}
+
+.pid img,h3,h2,p
+{
+	float:left;	
+}
+
+.pid img
+{
+	width: 400px;
+	height:400px;
+	margin-top:60px;
+	margin-bottom:10px;
+	margin-left:-300px;
+	padding-left:-90px;
+	position:relative;
+	cursor:pointer;
+	
+}
+
+.pid img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.pid h2
+{
+	color: #C39E9E;
+	line-height: 10px;
+	font-weight: 3px;
+	font: Helvetica, bold;
+	font-size: 50px;
+	width: 400px;
+	height:400px;
+	margin-top:90px;
+	margin-left:10px;
+	padding-left:-90px;
+	position:relative;
+}
+
+.pid h3
+{
+	color: #2d2d2b;
+	line-height: 30px;
+	font-weight: 300px;
+	font-family: myfont;
+	font-size: 60px;
+	margin-top:150px;
+	margin-left:-400px;
+	padding-left:-90px;
+	position:relative;
+}
+
+.pid p
+{
+	border:1px transparent;
+	width:230px;
+	height:250px;
+	margin-top:200px;
+	margin-left:-200px;
+	padding-left:-90px;
+	position:relative;
+}
+
+#work
+{
+	position: relative;
+	top: 800px;
+	margin-right:-15px;
+	margin-left:-15px;
+	max-width:19200px;
+	height:800px;
+	display: flex;
+	flex-flow: row wrap;
+	background-color: gray;
+	z-index:-3;
+}
+
+.wid 
+{
+   border:1px solid #F6F0F1; /*white cannot,why???*/
+   width:1400px;
+   height:740px;
+   margin-top:30px;
+   margin-bottom:30px;
+   margin-left:90px;
+   margin-right:90px;
+   z-index:-2;
+}
+
+.wid h2
+{
+	text-align:left;
+	font-size:40px;
+	color:white;
+	margin-left:15px;
+	cursor:pointer;
+}
+
+.pic1 img
+{
+	display: block;
+	position:absolute;
+	top:115px;
+	left:110px;
+	width:250px;
+	height:380px;
+}
+
+.pic2 img
+{
+	position:absolute;
+	top:115px;
+	left:370px;
+	width:795px;
+	height:380px;
+}
+
+.pic3 img
+{
+	position:absolute;
+	top:505px;
+	left:110px;
+	width:450px;
+	height:250px;
+}
+
+.pic4 img
+{
+	position:absolute;
+	top:505px;
+	left:568px;
+	width:398px;
+	height:250px;
+}
+
+.pic5 img
+{
+	position:absolute;
+	top:505px;
+	left:975px;
+	width:450px;
+	height:250px;
+}
+
+.pic6 img
+{
+	position:absolute;
+	top:115px;
+	left:1175px;
+	width:250px;
+	height:380px;
+}
+
+#contact
+{
+	position: relative;
+	top: 800px;
+	margin-right:-15px;
+	margin-left:-15px;
+	max-width:19200px;
+	height:800px;
+	display: flex;
+	flex-flow: row wrap;
+	z-index:-2;
+}
+
+.content
+{
+	margin-top:-700px;
+	margin-left:60px;
+}
+
+.content h2
+{
+	font-size:80px;
+	color:white;
+}
+
+.content p
+{
+	margin-top:-60px;
+	font-size:40px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: none;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: transparent;
+  color: black;
+  padding: 1px 90px;
+  width:100px;
+  height:60px;
+  margin-top: -450px;
+  margin-left:-960px;
+  border: 1px solid #F6F0F1;
+  cursor: pointer;
+  font-size:20px;
+}
+
+button:hover {
+  opacity:1;
+  border:2px solid black;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+footer
+{
+	position: relative;
+	top: 800px;
+	background:#C39E9E;
+	margin-right:-15px;
+	margin-left:-15px;
+	max-width:1920px;
+	max-height:80px; 
+}
+
+.f1 p
+{
+	position:relative;
+	padding-top:5px;
+	left:1050px;
+}
+
+.f1 img
+{
+	position:relative;
+	top:0px;
+	left:-360px;
+	width:40px;
+	height:40px;
+	margin:10px;
+}
+
+.f1 img:hover {
+  animation: shake 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+

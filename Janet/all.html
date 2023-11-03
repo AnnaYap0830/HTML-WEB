@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Janet Photography</title>
+<link rel="icon" href="icons/favicon.png">
+<link rel="stylesheet" href="all.css">
+</head>
+<body>
+<!--navigation bar-->
+<div class="nav">
+	
+	<div class="nav-button1"><a href="#home"><img src="icons/black.png" alt="logo" width="150px"></a>
+	</div><!--close div nav button 1-->
+	
+	<div class="nav-button2">
+		<a href="#profile">PROFILE</a>
+		<a href="#work">WORKS</a>
+		<a href="#contact">CONTACT</a>
+	</div><!--close div nav button 2-->
+	
+</div><!--close div nav-->
+	
+<div class="slideshow-container">
+<div class="slider-text">Life is but a dream</div>
+<div class="mySlides fade">
+  <img src="slide/1.jpg" style="width:100%" alt="1">
+</div>
+
+<div class="mySlides fade">
+  <img src="slide/2.jpg" style="width:100%" alt="2">
+</div>
+
+<div class="mySlides fade">
+  <img src="slide/3.jpg" style="width:100%" alt="3">
+</div>
+	
+<div class="mySlides fade">
+  <img src="slide/4.jpg" style="width:100%" alt="4">
+</div>
+
+<div class="dc">
+  <div style="text-align:center"> 
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+	  </div>
+</div>
+</div>	
+	
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+	
+	<div class="pid">		
+	<section id="profile">
+		<img src="janet dp.JPG" alt="I am Janet">
+		<h2>JANET CHOY</h2>
+		<h3>To be or not to be</h3>
+		<p>Janet is a suburban photographer who enjoys documenting the history of her hometown. 
+           Her wanderlust fueled her passion for the art which further developed in college years. 
+           She dreams to be the next Lee Friedlander and meeting him is her top item in her bucket list. 
+           When she’s not out and about with a camera in hand, Janet is usually glued to her laptop or 
+           fawning over fictional characters</p>
+	</section>
+		</div>
+	
+	<div class="ws">
+		<section id="work">
+		<div class="wid"><h2>Works</h2></div>	
+			<div class="pic1"><img src="with grey/01.JPG" alt="01"></div>
+			<div class="pic2"><img src="with grey/02.JPG" alt="03"></div>	
+			<div class="pic3"><img src="with grey/03.JPG" alt="03"></div>
+			<div class="pic4"><img src="with grey/04.JPG" alt="04"></div>
+			<div class="pic5"><img src="with grey/05.JPG" alt="05"></div>
+			<div class="pic6"><img src="with grey/06.JPG" alt="06"></div>
+		</section>
+		</div>
+	
+	<section id="contact">
+		<img src="lets talk.jpg" style="width:100%" alt="33">
+		<div class="content">
+			<h2>LET'S TALK</h2>
+			<br>
+		    <p>Don't hesistate to reach out if anything perks your ears</p>
+			</div>
+		<button  onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>ASK</b></button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+	 
+	 <input type="submit" value="Submit">
+
+    </div>
+  </form>
+</div>
+</section>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+	
+	<footer>
+	<div class="f1"><p align="right">Copyright © 2021 JANET CHOY ALL RIGHT DESERVED</p>
+	<a href="https://www.facebook.com/jiayi.chin.37"><img src="icons/best-hd-facebook-black-image.png" alt="FB"></a>
+	<a href=" https://www.instagram.com/tralainesjiayiii/"><img src="icons/insta.png" alt="INSTA"></a>
+	<a href=" https://twitter.com/crzy_clwn"><img src="icons/twitter.png" alt="TWITTER"></a>
+	</div></footer>
+	
+</body>
+</html>
