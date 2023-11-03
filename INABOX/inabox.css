@@ -1,0 +1,71 @@
+*
+{
+  box-sizing:border-box;
+  background-image:url("img/bg10.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  background:0.2;
+  background-width: 100% 100%;
+  background-color:#f1f1f1;
+}
+
+.topnav {
+  overflow: hidden;	
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+  width:25%;/* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid red;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid red;
+}
+
+h1
+{
+	padding:50px;
+	font-size: 50px;
+	text-align:center;
+	color:white;
+	text-decoration: 3px underline;
+	text-decoration-color: transparent;
+}
+
+h1:hover {
+  text-decoration: 3px underline;
+  text-decoration-color: red;
+}
+
+p
+{
+	color:white;
+	position: center;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.6); /* Black background with 0.5 opacity */
+    width: 100%;
+    padding: 80px;
+	font-size: 20px;
+}
+
+.logo img
+{
+	width: 150px;
+	height: 150px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}

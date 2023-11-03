@@ -1,0 +1,51 @@
+*
+{
+	box-sizing:border-box;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+  width:25%;/* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid red;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid red;
+}
+
+h1
+{
+	padding:10px;
+	padding-bottom: -5px;
+	font-size: 50px;
+	text-align:center;
+	color:black;
+	text-decoration: 3px underline;
+	text-decoration-color: transparent;
+}
+
+h1:hover {
+  text-decoration: 3px underline;
+  text-decoration-color: red;
+}
+
+p
+{
+	padding:5px;
+	text-align: center;
+}
